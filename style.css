@@ -1,0 +1,80 @@
+/* Spacing System (px to rem):
+
+    2px = 0.2rem
+    4px = 0.4rem
+    8px = 0.8rem
+    12px = 1.2rem
+    16px = 1.6rem
+    24px = 2.4rem
+    32px = 3.2rem
+    48px = 4.8rem
+    64px = 6.4rem
+    80px = 8rem
+    96px = 9.6rem
+
+
+Font Size (px to rem):
+
+    Small:
+        10px = 1rem
+        12px = 1.2rem
+    Normal:
+        14px = 1.4rem
+        16px = 1.6rem
+        18px = 1.8rem
+        20px = 2rem
+        24px = 2.4rem
+        30px = 3rem
+    Big:
+        36px = 3.6rem
+        44px = 4.4rem
+        52px = 5.2rem
+        62px = 6.2rem
+        74px = 7.4rem */
+
+/* main color: #e67e22
+  grey color: #555 #333;*/
+
+/* -- Shadows */
+
+/* Border-Radius */
+
+/* Font-weights */
+
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: #555;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-img {
+  max-width: 100%;
+}
+
+.hero-head {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+}
+
+.hero-descripton {
+  font-size: 2rem;
+  line-height: 1.5rem;
+}
