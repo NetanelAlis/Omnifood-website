@@ -57,7 +57,7 @@ html {
 }
 body {
   line-height: 1;
-  font-family: sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: #555;
 }
@@ -96,10 +96,17 @@ body {
 .btn:link,
 .btn:visited {
   display: inline-block;
+  text-decoration: none;
   font-size: 2rem;
+  font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 0.8rem;
   transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:visited {
+  cursor: pointer;
 }
 
 .action-btn:link,
@@ -127,4 +134,38 @@ body {
 
 .margin-right-small {
   margin-right: 1.6rem !important;
+}
+
+.delivered-meals {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  margin-top: 8rem;
+}
+
+.deliverd-imgs {
+  display: flex;
+}
+
+.customer-img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+
+.nubmber-of-deliveries {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.deliverd-imgs .customer-img:last-child {
+  margin: 0;
+}
+
+.delivered-meals span {
+  color: #cf711f;
+  font-weight: 700;
 }
