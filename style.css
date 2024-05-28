@@ -44,6 +44,7 @@ Font Size (px to rem):
 default: 1
 1.05
  */
+
 /* -- Shadows */
 
 /* Border-Radius 
@@ -75,6 +76,20 @@ body {
 General Reusable components
 **************** */
 
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+.grid--two-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -90,6 +105,35 @@ General Reusable components
 .btn:visited {
   cursor: pointer;
 }
+.primary-head {
+  line-height: 1.1;
+  font-size: 5.2rem;
+  margin-bottom: 3.2rem;
+}
+.primary-head,
+.secondary-head {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #333;
+}
+
+.secondary-head {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.teriary-head {
+}
+
+.subheadding {
+  display: block;
+  font-size: 1.6rem;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: -0.75px;
+}
 
 .margin-right-small {
   margin-right: 1.6rem !important;
@@ -97,32 +141,18 @@ General Reusable components
 
 /******************
 Hero section
-**************** */
+********************/
 .section-hero {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
 }
 .hero {
-  max-width: 130rem;
-  margin: 0 auto;
-  padding: 0 3.2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 9.6rem;
+  max-width: 130rem;
 }
 
 .hero-img {
   max-width: 100%;
-}
-
-.hero-head {
-  font-size: 5.2rem;
-  font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -0.5px;
-  margin-bottom: 3.2rem;
-  color: #333;
 }
 
 .hero-description {
@@ -240,4 +270,16 @@ Navigation
 .main-nav-btn-cta:hover,
 .main-nav-btn-cta:active {
   background-color: #cf711f;
+}
+
+/* ***********************
+How-it-works
+********************** */
+
+.how-it-works {
+  padding: 9.6rem 0;
+}
+
+.step-img {
+  max-width: 50%;
 }
