@@ -305,14 +305,20 @@ Meals
 .meal-tag {
   display: inline-block;
 
-  background-color: #51cf65;
   padding: 0.4rem 0.8rem;
   font-size: 1.2rem;
   text-transform: uppercase;
-  color: #102914;
   font-weight: 500;
   border-radius: 10rem;
   margin-bottom: 1.2rem;
+}
+.vegan {
+  background-color: #51cf65;
+  color: #102914;
+}
+.paleo {
+  background-color: #ffd43b;
+  color: #332a0c;
 }
 
 .meal-attributes {
