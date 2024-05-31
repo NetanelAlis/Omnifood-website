@@ -282,13 +282,19 @@ Meals
   padding: 9.6rem 0;
 }
 .meal-card {
-  display: flex;
-  flex-direction: column;
   gap: 2rem;
+  border-radius: 1.1rem;
+  overflow: hidden;
 }
 .meal-img {
   max-width: 100%;
 }
+
+.meal-descripton {
+  padding: 4.8rem;
+  padding-top: 3.2rem;
+}
+
 .meal-title {
   font-size: 2.4rem;
   color: #333;
@@ -296,20 +302,24 @@ Meals
   margin-bottom: 3.2rem;
 }
 
-.meal-descripton {
-  padding: 1rem 3.2rem 3.2rem 3.2rem;
-}
-
 .meal-tag {
   display: inline-block;
-  background-color: greenyellow;
+
+  background-color: #51cf65;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #102914;
+  font-weight: 500;
+  border-radius: 10rem;
+  margin-bottom: 1.2rem;
 }
 
 .meal-attributes {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.6rem;
 }
 
 .meal-attribute {
@@ -322,8 +332,4 @@ Meals
   height: 2.4rem;
   width: 2.4rem;
   color: #e67e22;
-}
-
-.meal-attribute-emphasize {
-  color: #888;
 }

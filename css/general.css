@@ -148,3 +148,11 @@ General Reusable components
 .margin-right-small {
   margin-right: 1.6rem !important;
 }
+
+strong {
+  font-weight: 500;
+}
+
+.box-shadow {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.75);
+}
