@@ -89,7 +89,11 @@ General Reusable components
 }
 
 .grid--two-columns {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--three-columns {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .btn:link,
