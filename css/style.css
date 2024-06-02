@@ -285,7 +285,19 @@ Meals
   gap: 2rem;
   border-radius: 1.1rem;
   overflow: hidden;
+  transition: all 0.3s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0rem 5rem 10rem -2rem,
+    rgba(0, 0, 0, 0.3) 0rem 3rem 6rem -3rem,
+    rgba(10, 37, 64, 0.35) 0rem -0.2rem 0.6rem 0rem inset;
 }
+
+.meal-card:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: rgba(50, 50, 93, 0.25) 0rem 5rem 10rem -2rem,
+    rgba(0, 0, 0, 0.03) 0rem 3rem 6rem -3rem,
+    rgba(10, 37, 64, 0.05) 0rem -0.2rem 0.6rem 0rem inset;
+}
+
 .meal-img {
   max-width: 100%;
 }
@@ -321,21 +333,42 @@ Meals
   color: #332a0c;
 }
 
-.meal-attributes {
+.attributes {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
 }
 
-.meal-attribute {
+.attribute {
   display: flex;
   align-items: center;
   gap: 0.4rem;
   font-size: 1.8rem;
+  line-height: 1.2;
 }
-.meal-attribute-icon {
+
+.meal-item {
+  padding: 0.4rem 0.8rem;
+}
+
+.icon {
   height: 2.4rem;
   width: 2.4rem;
   color: #e67e22;
+}
+
+.diet-list-head {
+  color: #333;
+}
+
+.diet-attribute {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 0.8rem;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
 }
