@@ -244,3 +244,31 @@ How-it-works
 
   z-index: -1;
 }
+
+/* ***********************
+Featured-in
+********************** */
+.featured-in-section {
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.featured-in-head {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 400px;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+
+.featurd-logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.featurd-logo {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
