@@ -35,7 +35,7 @@ Font Size (px to rem):
 /*    colors
 
 -Primary #e67e22
--Tints #fdf2e9,#cf711f
+-Tints #fdf2e9,#cf711f,#fae5d3
 -Shades
 -Accents
 -Greys #555 #333
@@ -44,6 +44,7 @@ Font Size (px to rem):
 default: 1
 1.05
  */
+
 /* -- Shadows */
 
 /* Border-Radius 
@@ -53,76 +54,19 @@ default: 1
 /* Font-weights  700 600 500 400*/
 
 /******************
-General components
-**************** */
-
-html {
-  font-size: 62.5%;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  line-height: 1;
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
-  color: #555;
-}
-
-/******************
-General Reusable components
-**************** */
-
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: 600;
-  padding: 1.6rem 3.2rem;
-  border-radius: 0.8rem;
-  transition: all 0.3s;
-}
-
-.btn:hover,
-.btn:visited {
-  cursor: pointer;
-}
-
-.margin-right-small {
-  margin-right: 1.6rem !important;
-}
-
-/******************
 Hero section
-**************** */
+********************/
 .section-hero {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
 }
 .hero {
-  max-width: 130rem;
-  margin: 0 auto;
-  padding: 0 3.2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 9.6rem;
+  max-width: 130rem;
 }
 
 .hero-img {
   max-width: 100%;
-}
-
-.hero-head {
-  font-size: 5.2rem;
-  font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -0.5px;
-  margin-bottom: 3.2rem;
-  color: #333;
 }
 
 .hero-description {
@@ -240,4 +184,63 @@ Navigation
 .main-nav-btn-cta:hover,
 .main-nav-btn-cta:active {
   background-color: #cf711f;
+}
+
+/* ***********************
+How-it-works
+********************** */
+
+.how-it-works {
+  padding: 9.6rem 0;
+  align-items: center;
+}
+.step-descripton {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.step-img {
+  max-width: 35%;
+}
+
+.step-number {
+  font-size: 9.8rem;
+  color: #ddd;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.step-img-box::after,
+.step-img-box::before {
+  display: block;
+  content: "";
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step-img-box::before {
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+
+  z-index: -2;
+}
+.step-img-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fae5d3;
+
+  z-index: -1;
 }
