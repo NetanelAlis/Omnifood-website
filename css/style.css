@@ -57,7 +57,7 @@ default: 1
 Hero section
 ********************/
 .section-hero {
-  background-color: #fdf2e9;
+  background-image: linear-gradient(to bottom, #fdf2e9, #fae5d3);
   padding: 4.8rem 0 9.6rem 0;
   padding: 50px 0;
 }
@@ -381,7 +381,7 @@ testimonials
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center;
-  background-color: #fdf2e9;
+  background-image: linear-gradient(to bottom, #fdf2e9, #fae5d3);
 }
 
 .testamonial-container {
@@ -429,4 +429,48 @@ testimonials
 
 .testamonial-gallery-image:hover {
   transform: scale(1.1);
+}
+
+/* ***********************
+pricing
+********************** */
+
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.pricing-plan-head-part {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.plan-price-name {
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price-cost {
+  font-size: 7.4rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.plan-price-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #777;
+}
+
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-left: 0.8rem;
+}
+
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
 }
