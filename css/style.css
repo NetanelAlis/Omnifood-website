@@ -439,6 +439,21 @@ pricing
   padding: 9.6rem 0;
 }
 
+.pricing-plan {
+  background-color: #fdf2e9;
+  border-radius: 1.1rem;
+  padding: 4.8rem;
+  max-width: 75%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.pricing-plan:hover {
+  transform: translateY(-1.1rem);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2px 0px;
+  transition: all 0.3s;
+}
+
 .pricing-plan-head-part {
   text-align: center;
   margin-bottom: 4.8rem;
@@ -453,9 +468,10 @@ pricing
 }
 
 .plan-price-cost {
-  font-size: 7.4rem;
+  font-size: 6.2rem;
   font-weight: 600;
   color: #333;
+  margin-bottom: 1.6rem;
 }
 
 .plan-price-text {
@@ -473,4 +489,35 @@ pricing
 .plan-sign-up {
   text-align: center;
   margin-top: 4.8rem;
+}
+
+.starter {
+  justify-self: end;
+  background-color: #fff;
+  border: solid 2px #fdf2e9;
+}
+
+.Complete {
+  border: solid 2px #fdf2e9;
+  position: relative;
+  overflow: hidden;
+}
+
+.Complete::after {
+  content: "Best value";
+  position: absolute;
+  top: 4%;
+  right: -10%;
+
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-color: #ffd43b;
+  padding: 0.8rem 4rem;
+  color: #333;
+  transform: rotate(45deg);
+}
+
+.none {
+  color: #ff3333;
 }
