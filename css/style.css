@@ -566,18 +566,29 @@ Call-to-sction
 .call-to-action-box {
   display: grid;
   grid-template-columns: 2fr 1fr;
+
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
-  overflow: hidden;
   border: 1.1rem;
-  height: 50rem;
-  box-shadow: rgba(50, 50, 93, 0.15) 0rem 5rem 10rem -2rem,
-    rgba(0, 0, 0, 0.2) 0rem 3rem 6rem -3rem,
-    rgba(10, 37, 64, 0.25) 0rem -0.2rem 0.6rem 0rem inset;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  overflow: hidden;
 }
 
 .call-to-action-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
 }
 
+.call-to-action-text-box .secondary-head {
+  color: #45260a;
+  margin-bottom: 3.2rem;
+}
+
+.call-to-action-text-box-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
 .call-to-action-img-box {
   background-image: linear-gradient(
       to right bottom,
@@ -588,4 +599,53 @@ Call-to-sction
 
   background-size: cover;
   background-position: center;
+}
+
+.call-to-action-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 3.2rem;
+}
+
+.call-to-action-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.call-to-action-form input,
+.call-to-action-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 0.9rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.call-to-action-form input::placeholder {
+  color: #aaa;
+}
+
+.call-to-action-form button {
+  font-family: inherit;
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.call-to-action-form button:hover {
+  background-color: #fdf2e9;
+  color: #45260a;
+}
+
+.call-to-action-form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
