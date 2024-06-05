@@ -286,16 +286,16 @@ Meals
   border-radius: 1.1rem;
   overflow: hidden;
   transition: all 0.3s;
-  box-shadow: rgba(50, 50, 93, 0.25) 0rem 5rem 10rem -2rem,
-    rgba(0, 0, 0, 0.3) 0rem 3rem 6rem -3rem,
-    rgba(10, 37, 64, 0.35) 0rem -0.2rem 0.6rem 0rem inset;
+  box-shadow: rgba(50, 50, 93, 0.15) 0rem 5rem 10rem -2rem,
+    rgba(0, 0, 0, 0.2) 0rem 3rem 6rem -3rem,
+    rgba(10, 37, 64, 0.25) 0rem -0.2rem 0.6rem 0rem inset;
 }
 
 .meal-card:hover {
   transform: translateY(-1.2rem);
-  box-shadow: rgba(50, 50, 93, 0.25) 0rem 5rem 10rem -2rem,
-    rgba(0, 0, 0, 0.3) 0rem 3rem 6rem -3rem,
-    rgba(10, 37, 64, 0.35) 0rem -0.2rem 0.6rem 0rem inset;
+  box-shadow: rgba(50, 50, 93, 0.15) 0rem 5rem 10rem -2rem,
+    rgba(0, 0, 0, 0.2) 0rem 3rem 6rem -3rem,
+    rgba(10, 37, 64, 0.25) 0rem -0.2rem 0.6rem 0rem inset;
 }
 
 .meal-img {
@@ -374,7 +374,7 @@ Meals
 }
 
 /* ***********************
-testimonials
+Testimonials
 ********************** */
 
 .section-testimonials {
@@ -442,13 +442,15 @@ pricing
 }
 
 .pricing-plan {
-  background-color: #fdf2e9;
+  /* background-color: #fdf2e9; */
+  background-color: #fff;
   padding: 4.8rem;
   max-width: 75%;
   border-radius: 1.1rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-  transition: all 0.5s;
+  transition: all 0.4s;
+  overflow: hidden;
 }
 
 .pricing-plan:hover {
@@ -500,9 +502,9 @@ pricing
 }
 
 .Complete {
-  border: solid 2px #fdf2e9;
+  border: solid 2px transparnet;
+  background-image: linear-gradient(to bottom, #fdf2e9, #fae5d3);
   position: relative;
-  overflow: hidden;
 }
 
 .Complete::after {
@@ -551,4 +553,39 @@ pricing
   background-color: #fdf2e9;
   padding: 1.6rem;
   border-radius: 50%;
+}
+
+/* ***********************
+Call-to-sction
+********************** */
+
+.call-to-action-section {
+  padding: 9.6rem 0;
+}
+
+.call-to-action-box {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  overflow: hidden;
+  border: 1.1rem;
+  height: 50rem;
+  box-shadow: rgba(50, 50, 93, 0.15) 0rem 5rem 10rem -2rem,
+    rgba(0, 0, 0, 0.2) 0rem 3rem 6rem -3rem,
+    rgba(10, 37, 64, 0.25) 0rem -0.2rem 0.6rem 0rem inset;
+}
+
+.call-to-action-text-box {
+}
+
+.call-to-action-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url("../img/eating.jpg");
+
+  background-size: cover;
+  background-position: center;
 }
