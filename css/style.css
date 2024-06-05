@@ -152,7 +152,6 @@ Webstie header
 /* *****************
 Navigation
 ***************** */
-
 .main-nav-bar-list {
   display: flex;
   gap: 3.2rem;
@@ -560,7 +559,7 @@ Call-to-sction
 ********************** */
 
 .call-to-action-section {
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 12.8rem;
 }
 
 .call-to-action-box {
@@ -645,7 +644,88 @@ Call-to-sction
   color: #45260a;
 }
 
-.call-to-action-form *:focus {
+.call-to-action-form *:focus-visible {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+/* ***********************
+Footer
+********************** */
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+
+.footer-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-list a:link,
+.footer-list a:visited,
+.social-link a:link,
+.social-link a:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-list a:hover,
+.footer-list a:active,
+.social-link a:hover,
+.social-link a:active {
+  color: #767676;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+.social-link {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.footer-logo {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.logo-footer {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+.copyright {
+  font-size: 1.4rem;
+  color: #767676;
+  line-height: 1.6;
+  margin-top: auto;
+}
+
+.footer-adress {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.footer-adress-first-par {
+  margin-bottom: 2.4rem;
+}
+
+.link-phone {
+  text-decoration: none;
+  color: #767676;
 }

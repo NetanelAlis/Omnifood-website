@@ -104,6 +104,10 @@ General Reusable components
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--five-columns-footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
 .btn,
 .btn:link,
 .btn:visited {
@@ -192,7 +196,7 @@ strong {
   text-align: center;
 }
 
-*:focus {
+*:focus-visible {
   outline: none;
-  box-shadow: inset 0 0 0 0.8rem rgb(230, 125, 34, 0.5);
+  box-shadow: 0 0 0 0.8rem rgba(213, 102, 5, 0.5);
 }
