@@ -1,0 +1,44 @@
+/* 1em = 16px default */
+
+/* ************************* 
+Bellow 1334px (smaller-computer)
+************************* */
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .primary-head {
+    font-size: 4.4rem;
+  }
+
+  .testamonial-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ************************* 
+Tablates 1200px (smaller-computer)
+************************* */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .secondary-head {
+    font-size: 3.6rem;
+  }
+  .teriary-head {
+    font-size: 2.4rem;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .main-nav-bar-list {
+  }
+}
