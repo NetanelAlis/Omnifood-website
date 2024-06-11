@@ -726,3 +726,19 @@ Call-to-sction
 .footer-link:active {
   color: #555;
 }
+
+/* ******************* 
+mobile-phone
+****************/
+.btn-mobile-navigation {
+  border: none;
+  background-color: none;
+  cursor: pointer;
+}
+
+.icon-mobile-navigation {
+  height: 4.2rem;
+  width: 4.2rem;
+  color: #333;
+  display: none;
+}
