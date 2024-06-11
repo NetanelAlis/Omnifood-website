@@ -1,44 +1,56 @@
 /* 1em = 16px default */
 
-/* ************************* 
-Bellow 1334px (smaller-computer)
-************************* */
+/* ************************************************
+Bellow 1344px-1200px (smaller-computer most common 12050px)
+***************************************************/
 
 @media (max-width: 84em) {
   .hero {
     max-width: 120rem;
   }
 
-  .primary-head {
+  /* .primary-head {
     font-size: 4.4rem;
-  }
+  } */
 
   .testamonial-gallery {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-/* ************************* 
-Tablates 1200px (smaller-computer)
-************************* */
+/* *******************************************************************
+ 1200px-950 (Tablet) test on ipad in the dev-tools when you finished
+**********************************************************************/
 
 @media (max-width: 75em) {
   html {
-    font-size: 56.25%;
+    font-size: 52.25%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
   }
 
   .secondary-head {
     font-size: 3.6rem;
   }
+
   .teriary-head {
     font-size: 2.4rem;
   }
 
-  .grid {
-    column-gap: 4.8rem;
-    row-gap: 6.4rem;
+  .header {
+    padding: 0 3.8rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
   }
 
   .main-nav-bar-list {
+    gap: 3.2rem;
+  }
+
+  .testamonial-container {
+    padding: 9.6rem 3.2rem;
   }
 }
