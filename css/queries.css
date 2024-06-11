@@ -119,6 +119,10 @@ Bellow 1344px-1200px (smaller-computer most common 12050px)
     display: block;
   }
 
+  /* *******************************************************************
+940px-780px  nav-bar 
+**********************************************************************/
+
   .header {
     position: relative;
   }
@@ -165,5 +169,45 @@ Bellow 1344px-1200px (smaller-computer most common 12050px)
 
   .main-nav-is-open .open-menu {
     display: none;
+  }
+}
+
+/* *******************************************************************
+700-550px 
+**********************************************************************/
+
+@media (max-width: 44em) {
+  .grid--three-columns,
+  .grid--four-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diet-container {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  .secondary-head {
+    margin-bottom: 4.8rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .footer .container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+
+    margin-bottom: 3.2rem;
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
   }
 }

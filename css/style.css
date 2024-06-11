@@ -66,7 +66,7 @@ Hero section
 }
 
 .hero-img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .hero-description {
@@ -449,7 +449,7 @@ pricing
   /* background-color: #fdf2e9; */
   background-color: #fff;
   padding: 4.8rem;
-  max-width: 75%;
+  width: 75%;
   border-radius: 1.1rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
