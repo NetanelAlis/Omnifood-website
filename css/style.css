@@ -732,7 +732,7 @@ mobile-phone
 ****************/
 .btn-mobile-navigation {
   border: none;
-  background-color: none;
+  background-color: transparent;
   cursor: pointer;
 }
 

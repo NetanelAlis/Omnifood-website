@@ -165,6 +165,7 @@ Bellow 1344px-1200px (smaller-computer most common 12050px)
 
   .main-nav-is-open .close-menu {
     display: block;
+    z-index: 999;
   }
 
   .main-nav-is-open .open-menu {
@@ -209,5 +210,71 @@ Bellow 1344px-1200px (smaller-computer most common 12050px)
   .logo-col,
   .address-col {
     grid-column: span 3;
+  }
+}
+
+/* *******************************************************************
+  Bellow 544px  (mobile-phones)
+**********************************************************************/
+
+@media (max-width: 34em) {
+  .grid--three-columns,
+  .grid--four-columns,
+  .grid--two-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0rem 6.4rem 0rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .featurd-logo {
+    height: 1.2rem;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .testamonial-gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .call-to-action-box {
+    grid-template-columns: 1fr;
+  }
+
+  .call-to-action-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+
+  .call-to-action-text-box {
+    padding: 3.2rem;
   }
 }
