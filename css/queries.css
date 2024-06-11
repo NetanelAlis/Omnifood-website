@@ -18,7 +18,7 @@ Bellow 1344px-1200px (smaller-computer most common 12050px)
   }
 }
 /* *******************************************************************
- 1200px-950 (Tablet) test on ipad in the dev-tools when you finished
+ 1200px-950 (Regular-Big Tablet)
 **********************************************************************/
 
 @media (max-width: 75em) {
@@ -52,5 +52,66 @@ Bellow 1344px-1200px (smaller-computer most common 12050px)
 
   .testamonial-container {
     padding: 9.6rem 3.2rem;
+  }
+}
+
+/* *******************************************************************
+940px-780px (Regular -Small tablets) i
+**********************************************************************/
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 6.4rem;
+  }
+
+  .hero-img {
+    max-width: 60%;
+  }
+
+  .hero-img-box,
+  .hero-text-box {
+    text-align: center;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .featurd-logo {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 6.4rem;
+  }
+
+  .meal-descripton {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .testamonial-gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .call-to-action-box {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .call-to-action-form {
+    grid-template-columns: 1fr;
+  }
+
+  .call-to-action-form button {
+    margin-top: 1.2rem;
   }
 }
