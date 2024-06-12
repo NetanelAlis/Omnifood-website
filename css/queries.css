@@ -146,6 +146,9 @@ Bellow 1344px-1200px (smaller-computer most common 12050px)
     visibility: hidden;
   }
 
+  .btn-mobile-navigation {
+    display: block;
+  }
   .main-nav-is-open .main-nav-bar {
     opacity: 1;
     pointer-events: auto;

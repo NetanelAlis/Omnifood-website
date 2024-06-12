@@ -17,10 +17,13 @@
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
-
     <script
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
     ></script>
 
     <script defer src="java-script/script.js"></script>
@@ -34,12 +37,18 @@
       /></a>
       <nav class="main-nav-bar">
         <ul class="main-nav-bar-list">
-          <li><a href="#" class="main-nav-btn">How it works</a></li>
-          <li><a href="#" class="main-nav-btn">Meals</a></li>
-          <li><a href="#" class="main-nav-btn">Testimonials </a></li>
-          <li><a href="#" class="main-nav-btn">Pricing</a></li>
           <li>
-            <a href="#" class="main-nav-btn main-nav-btn-cta">Try for free</a>
+            <a href="#how-it-work" class="main-nav-btn">How it works</a>
+          </li>
+          <li><a href="#meals" class="main-nav-btn">Meals</a></li>
+          <li>
+            <a href="#testamonials" class="main-nav-btn">Testimonials </a>
+          </li>
+          <li><a href="#pricing" class="main-nav-btn">Pricing</a></li>
+          <li>
+            <a href="#cta" class="main-nav-btn main-nav-btn-cta"
+              >Try for free</a
+            >
           </li>
         </ul>
       </nav>
@@ -66,7 +75,7 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn action-btn margin-right-small"
+            <a href="#cta" class="btn action-btn margin-right-small"
               >Start eating well</a
             >
             <a href="#" class="btn info-btn">Learn more &darr;</a>
@@ -143,7 +152,7 @@
           </div>
         </div>
       </section>
-      <section class="how-it-works">
+      <section class="how-it-works" id="how-it-work">
         <div class="container how-it-works-head">
           <span class="subheadding">How it works</span>
           <h2 class="secondary-head">
@@ -204,7 +213,7 @@
         </div>
       </section>
 
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container center-text">
           <span class="subheadding">Meals</span>
           <h2 class="secondary-head">
@@ -378,7 +387,7 @@
         </div>
       </section>
 
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testamonials">
         <div class="testamonial-container">
           <span class="subheadding">TESTIMONIALS</span>
           <h2 class="secondary-head">Once you try it, you can't go back</h2>
@@ -525,7 +534,7 @@
         </div>
       </section>
 
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container">
           <span class="subheadding">Pricing</span>
           <h2 class="secondary-head">Eating well without braking the bank</h2>
@@ -678,7 +687,7 @@
         </div>
       </div>
 
-      <section class="call-to-action-section">
+      <section class="call-to-action-section" id="cta">
         <div class="container">
           <div class="call-to-action-box">
             <div class="call-to-action-text-box">

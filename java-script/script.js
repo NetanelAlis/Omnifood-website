@@ -1,15 +1,54 @@
+// **************************************************************
+// Functions creation
+// **************************************************************
+function toggleNavigationMenu() {
+  const el_Header = document.querySelector(".header");
+  el_Header.classList.toggle("main-nav-is-open");
+}
+function setCurrentYear() {
+  const el_SetCurrenyYear = document.querySelector(".year");
+  const currentYear = new Date().getFullYear();
+  el_SetCurrenyYear.textContent = currentYear;
+}
 function creatingNavigationToggle() {
   const el_buttonForNavigation = document.querySelector(
     ".btn-mobile-navigation"
   );
-  const el_WebsiteHeader = document.querySelector(".header");
 
   el_buttonForNavigation.addEventListener("click", function () {
-    el_WebsiteHeader.classList.toggle("main-nav-is-open");
+    toggleNavigationMenu();
   });
 }
+function smoothScrollingAnimation() {
+  const el_AllWebstieLinks = document.querySelectorAll("a:link");
 
+  el_AllWebstieLinks.forEach(function (webstieLink) {
+    webstieLink.addEventListener("click", function (event) {
+      event.preventDefault();
+      const webstieLinkHref = this.getAttribute("href");
+
+      if (webstieLinkHref === "#") {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      } else if (webstieLinkHref.startsWith("#")) {
+        const scrollLocation = document.querySelector(webstieLinkHref);
+        scrollLocation.scrollIntoView({ behavior: "smooth" });
+      }
+
+      if (webstieLink.classList.contains("main-nav-btn")) {
+        toggleNavigationMenu();
+      }
+    });
+  });
+}
+// **************************************************************
+// Functions call
+// **************************************************************
 creatingNavigationToggle();
+setCurrentYear();
+smoothScrollingAnimation();
 
 // **************************************************************
 // Fixing flexbox gap property missing in some Safari versions
