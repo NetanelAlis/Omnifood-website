@@ -1,4 +1,4 @@
-mnifood Project
+omnifood Project
 
 Welcome to my Omnifood project! This single-page website was created as the final project for my HTML/CSS course. Omnifood is a fictional company that provides AI-based meal subscriptions.
 Key Features
