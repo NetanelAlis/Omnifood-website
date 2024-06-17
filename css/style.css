@@ -732,8 +732,9 @@ mobile-phone
 ****************/
 .btn-mobile-navigation {
   border: none;
-  background-color: none;
+  background: none;
   cursor: pointer;
+  display: none;
 }
 
 .icon-mobile-navigation {
@@ -741,4 +742,23 @@ mobile-phone
   width: 4.2rem;
   color: #333;
   display: none;
+}
+
+/* ******************* 
+sticky-nav
+****************/
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgb(255, 255, 255, 0.95);
+  z-index: 9999;
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
 }
