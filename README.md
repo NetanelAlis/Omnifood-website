@@ -1,10 +1,11 @@
-omnifood Project
+# <a href="https://0mnif00d.netlify.app" target="_blank">Omnifood</a>
 
 Welcome to my Omnifood project! This single-page website was created as the final project for my HTML/CSS course. Omnifood is a fictional company that provides AI-based meal subscriptions.
 Key Features
 
-Building this website from scratch allowed me to learn and implement various features that will be useful in future projects. Here are some highlights:
+Building this website from scratch allowed me to learn and implement various features that will be useful in future projects.
 
+# Key Features
     -Responsive Design: The website is fully responsive, adapting to different screen sizes with media queries.
     -Hamburger Menu: A hamburger menu appears on tablet-sized screens and smaller for easy navigation.
     -Smooth Scrolling: Smooth scrolling is implemented for all navigation links in the header and footer.
