@@ -1,0 +1,213 @@
+/* 1em = 16px default */
+
+/* ************************************************
+Bellow 1344px-1200px (smaller-computer most common 12050px)
+***************************************************/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  /* .primary-head {
+    font-size: 4.4rem;
+  } */
+
+  .testamonial-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* *******************************************************************
+ 1200px-950 (Regular-Big Tablet)
+**********************************************************************/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 52.25%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+  }
+
+  .secondary-head {
+    font-size: 3.6rem;
+  }
+
+  .teriary-head {
+    font-size: 2.4rem;
+  }
+
+  .header {
+    padding: 0 3.8rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .main-nav-bar-list {
+    gap: 3.2rem;
+  }
+
+  .testamonial-container {
+    padding: 9.6rem 3.2rem;
+  }
+}
+
+/* *******************************************************************
+940px-780px (Regular -Small tablets) i
+**********************************************************************/
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 6.4rem;
+  }
+
+  .hero-img {
+    max-width: 60%;
+  }
+
+  .hero-img-box,
+  .hero-text-box {
+    text-align: center;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .featurd-logo {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 6.4rem;
+  }
+
+  .meal-descripton {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .testamonial-gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .call-to-action-box {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .call-to-action-form {
+    grid-template-columns: 1fr;
+  }
+
+  .call-to-action-form button {
+    margin-top: 1.2rem;
+  }
+
+  .open-menu {
+    display: block;
+  }
+
+  /* *******************************************************************
+940px-780px  nav-bar 
+**********************************************************************/
+
+  .header {
+    position: relative;
+  }
+  .main-nav-bar {
+    background-color: rgb(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .main-nav-is-open .main-nav-bar {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .main-nav-bar-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-btn:link,
+  .main-nav-btn:visited {
+    font-size: 3rem;
+  }
+
+  .main-nav-is-open .close-menu {
+    display: block;
+  }
+
+  .main-nav-is-open .open-menu {
+    display: none;
+  }
+}
+
+/* *******************************************************************
+700-550px 
+**********************************************************************/
+
+@media (max-width: 44em) {
+  .grid--three-columns,
+  .grid--four-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diet-container {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  .secondary-head {
+    margin-bottom: 4.8rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .footer .container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+
+    margin-bottom: 3.2rem;
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+}
