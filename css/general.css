@@ -88,6 +88,10 @@ General Reusable components
   row-gap: 9.6rem;
 }
 
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
 .grid--two-columns {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -96,6 +100,15 @@ General Reusable components
   grid-template-columns: repeat(3, 1fr);
 }
 
+.grid--four-columns {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--five-columns-footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -105,6 +118,8 @@ General Reusable components
   padding: 1.6rem 3.2rem;
   border-radius: 0.8rem;
   transition: all 0.3s;
+  border: none;
+  cursor: pointer;
 }
 
 .btn:hover,
@@ -179,4 +194,9 @@ strong {
 
 .center-text {
   text-align: center;
+}
+
+*:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(213, 102, 5, 0.5);
 }
