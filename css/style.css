@@ -744,6 +744,9 @@ mobile-phone
   display: none;
 }
 
+/* ******************* 
+sticky-nav
+****************/
 .sticky .header {
   position: fixed;
   top: 0;
